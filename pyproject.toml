@@ -1,0 +1,24 @@
+[project]
+name = "dataspider"
+version = "0.1.0"
+description = "A package for doing great things!"
+authors = [{ name = "Jorge Valverde" }]
+readme = "README.md"
+license = { text = "MIT" }
+
+dependencies = [
+    "requests",
+    "beautifulsoup4",
+    "pandas",
+    "tabulate"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ipython"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
